@@ -112,7 +112,20 @@ const weaponsArray = [
 
 // ITERATION 2
 
-function selectRandom() {}
+function selectRandom(array) {
+    if (array.length === 0){
+        return undefined;
+    } else if (array.length === 1) {
+        return (array [0]);
+    } else {
+        const randomItem = Math.floor(Math.random()* array.length);
+        
+        return array [randomItem];
+    }
+
+}
+
+
 
 function pickMystery() {}
 
@@ -121,4 +134,4 @@ function pickMystery() {}
 
 function revealMystery() {}
 
-console.log(typeof suspectsArray);
+
